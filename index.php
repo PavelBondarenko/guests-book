@@ -18,7 +18,7 @@ include("libery.php");
 
 $result_count = $mysqli->query('SELECT count(*) FROM guests'); //считаем количество строк в таблице
 $count = $result_count->fetch_array(MYSQLI_NUM)[0];
-echo "количество записей: " . $count;
+echo "количество записей: <b>$count</b>" ;
 $result_count->free();
 
 
